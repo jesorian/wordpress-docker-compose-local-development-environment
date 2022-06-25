@@ -17,7 +17,8 @@ Commands to run the local development environment
 
 Go inside the root directory and run
 ```sh
-docker-compose up -d --build
+docker-compose build
+docker-compose up -d
 ```
 
 After the command open the http://localhost to set up your WordPress website.
