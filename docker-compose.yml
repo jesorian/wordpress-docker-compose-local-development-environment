@@ -11,6 +11,7 @@ services:
     volumes:
       - ./nginx-custom-configs/default.conf:/etc/nginx/conf.d/default.conf
       - ./wordpress:/var/www/wordpress:delegated
+    command: "&& chown -R www-data:www-data /var/www/wordpress"
     networks:
       - wordpress-dev-network
     depends_on:
