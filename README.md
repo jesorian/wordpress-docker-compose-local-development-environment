@@ -3,6 +3,8 @@ WordPress docker-compose to set up quickly for local development with persistent
 
 ## Pre-requisite
 
+Install Docker https://docs.docker.com/engine/install/ubuntu/
+
 Ubuntu Machine or Ubuntu running insde WSL of windows.
 
 ## Installation
