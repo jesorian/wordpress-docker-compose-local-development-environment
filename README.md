@@ -22,4 +22,4 @@ After the command open the http://localhost to set up your WordPress website.
 
 ## Common Issue
 
-`Error establishing connection to the database` solution is just wait for the MySQL container to be full up. Just refresh the page until the container is loaded 100%.
+`Error establishing connection to the database` solution is just wait for the MySQL container to be fully up. Just refresh the page until the container is loaded 100%.
