@@ -22,11 +22,14 @@ docker-compose build --no-cache
 docker-compose up -d --force-recreate
 ```
 
-Change permission of nginx root directory
+Change permission of website root directory on nginx container
 ```
 docker exec -ti nginx ash
 chown -R www-data:www-data /var/www/html
 exit
+```
+Change permission of website root directory on php container
+```
 docker exec -ti php ash
 chown -R www-data:www-data /var/www/html
 exit
