@@ -11,8 +11,8 @@ services:
       - 80:80
     volumes:
       - ./nginx-custom-configs/default.conf:/etc/nginx/conf.d/default.conf
-      - ./wordpress:/var/www/wordpress:delegated
-    command: "&& chown -R www-data:www-data /var/www/wordpress"
+      - ./wordpress:/var/www/html:delegated
+    command: "&& chown -R www-data:www-data /var/www/html"
     networks:
       - wordpress-dev-network
     depends_on:
@@ -37,7 +37,7 @@ services:
       context: .
       dockerfile: php.dockerfile
     volumes:
-      - ./wordpress:/var/www/wordpress:delegated
+      - ./wordpress:/var/www/html:delegated
     networks:
       - wordpress-dev-network
     depends_on:
