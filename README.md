@@ -9,9 +9,10 @@ Ubuntu Machine or Ubuntu running insde WSL of windows.
 
 ## Installation
 
-Configure your persistent database folder.
+Configure your persistent database folder and database connection string in the `docker-compose.yml` file.
 
-Default location is `/var/opt/mysql/wp-local-data` you can customize the `docker-compose.yml` line 28 for this.
+The persistent database folder is Line 30.
+The database connection string is from Line 25 to Line 28.
 
 Commands to run the local development environment
 
