@@ -19,7 +19,7 @@ Commands to run the local development environment
 Go inside the root directory and run
 ```sh
 docker-compose build --no-cache
-docker-compose up -d
+docker-compose up -d --force-recreate
 ```
 
 After the command open the http://localhost to set up your WordPress website.
