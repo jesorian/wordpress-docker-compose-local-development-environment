@@ -27,6 +27,9 @@ Change permission of nginx root directory
 docker exec -ti nginx ash
 chown -R www-data:www-data /var/www/html
 exit
+docker exec -ti php ash
+chown -R www-data:www-data /var/www/html
+exit
 ```
 
 After the command open the http://localhost to set up your WordPress website.
